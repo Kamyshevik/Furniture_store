@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Furniture house</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Source+Serif+Pro&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="header">
+    <h1>We are finally open</h1>
+  </div>
+
+  <div class="conteinerTimer">
+
+    <div class="timer timerDays">
+      <div class="block">
+        <h4 class="days"></h4>
+        <h3 class="header_h3">DAYS</h3>
+      </div>
+    </div>
+
+    <div class="timer timerHours">
+      <div class="block">
+        <h4 class="hours"></h4>
+        <h3 class="header_h3">HOURS</h3>
+      </div>
+    </div>
+
+    <div class="timer timerMinutes">
+      <div class="block">
+        <h4 class="minutes"></h4>
+        <h3 class="header_h3">MINUTES</h3>
+      </div>
+    </div>
+
+    <div class="timer timerSeconds">
+      <div class="block">
+        <h4 class="seconds"></h4>
+        <h3 class="header_h3">SECONDS</h3>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="conteiner">
+    <div class="item one selected">
+      <h4 class="h4_magazin">Berta</h4>
+      <p class="par">interchangeable sectional sofa-bed with storage</p>
+      <p class="price">5000$</p>
+    </div>
+
+    <div class="item two">
+      <h4 class="h4_magazin">Belgravia</h4>
+      <p class="par">sofa-bed with memory foam mattress</p>
+      <p class="price">2000$</p>
+    </div>
+
+    <div class="item three">
+      <h4 class="h4_magazin">Foodien</h4>
+      <p class="par">recycled teak end table</p>
+      <p class="price">1000$</p>
+    </div>
+
+    <div class="item four">
+      <h4 class="h4_magazin">Family</h4>
+      <p class="par">acacia wood dining table</p>
+      <p class="price">2500$</p>
+    </div>
+
+    <div class="item five">
+      <h4 class="h4_magazin">Shean</h4>
+      <p class="par">tufted velvet sofa-bed</p>
+      <p class="price">2100$</p>
+    </div>
+
+    <div class="item six">
+      <h4 class="h4_magazin">Rabia</h4>
+      <p class="par">tufted upholstered wingback queen size bed with storage</p>
+      <p class="price">5000$</p>
+    </div>
+  </div>
+
+  <!-- генератор случайных чисел -->
+  <div class="NumberGenerator">
+    <div id="conteinerNumberGenerator">
+      <h3 class="headerNumberGenerator">Угадай свою скидку!</h3>
+      <h3 class="headerNumberGenerator">Чем больше нажатий, тем больше процент скидки?</h3>
+      <input type="text" placeholder="Скидка..." id = "guess"><br>
+      <button id="btn">Discount</button>
+    </div>
+  </div>
+
+
+<!-- Отправить сообщение -->
+  <div class="header">
+    <h3 class="sendMessage">Send us a message!</h3>
+  </div>
+
+  <form action="https://formspree.io/f/mzbqevpz" method="POST">
+
+    <input type="hidden" name="_language" value="ru" />
+
+    <div class="header">
+      <label>
+        Your email:
+        <input type="email" class="text-input" name="email" placeholder="Email..." required="">
+      </label>
+    </div>
+    <div class="header">
+      <label>
+        Your message:
+        <textarea class="text-input" name="message" placeholder="Type your message..." required=""></textarea>
+      </label>
+    </div>
+    <br>
+    <!-- your other form fields go here -->
+    <div class="header">
+      <button class="btn" type="submit">Send</button>
+    </div>
+  </form>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="index.js"></script>
+</body>
+
+</html>
